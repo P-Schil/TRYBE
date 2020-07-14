@@ -7,5 +7,5 @@ let arithmeticAvarage;
 for (let i=0;i<10;i++){;
 sum=sum+numbers[i];
 }
-arithmeticAvarange = sum/numbers.length;
-console.log(arithmeticAvarange);
+arithmeticAvarage = sum/numbers.length;
+console.log(arithmeticAvarage);
