@@ -16,8 +16,9 @@ let info = {
     recorrente: "Sim"
   };
 for (let i in info,info2){
-  
+  if (info[i]!=info2[i]){
     console.log(info[i]+ " e "+info2[i])}
+    else{console.log("Ambos "+[i])}}
 
   // personagem: "Margarida",
   //origem: "Pato Donald",
