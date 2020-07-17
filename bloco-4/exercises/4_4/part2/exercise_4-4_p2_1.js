@@ -9,3 +9,20 @@
 //verificaPalindrome("desenvolvimento");
 
 //Retorno esperado: false
+
+
+
+function verificaPalindromo (palavra){
+   
+    let palavraAoContrario=""
+    
+    for (let i =palavra.length -1 ;i>=0;i--){
+      palavraAoContrario=palavraAoContrario+palavra[i]
+    }
+    if(palavra=palavraAoContrario){
+        console.log(true)
+    }else{console.log(false)}
+    }
+
+    verificaPalindromo("arara")
+
