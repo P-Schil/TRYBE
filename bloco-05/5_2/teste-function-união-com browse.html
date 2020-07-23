@@ -87,7 +87,7 @@
         elementDivLC.className = 'left-content';
         elementDivMC.appendChild(elementDivLC);
 
-      /*//6 Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
+     /* //6 Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
         const elementDivRC = document.createElement('div');
         elementDivRC.className = 'rigth-content';
         elementDivMC.appendChild(elementDivRC);*/
@@ -97,12 +97,12 @@
       elementDivMC.appendChild(elementDivRC);
 
 
-    ///7 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 
+    //7 Adicione uma imagem com src configurado para o valor https://picsum.photos/200 
      //e classe small-image. Esse elemento deve ser filho do div criado no passo 5;
-       /* const elementImage = document.createElement('img');
+        const elementImage = document.createElement('img');
         elementImage.className = 'small-image';
         elementImage.src = 'https://picsum.photos/200'
-        elementDivLC.appendChild(elementImage);*/
+        elementDivLC.appendChild(elementImage);
     //8 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, 
     //ou seja, um, dois, três, ... como valores da lista. 
     //Essa lista deve ser filha do div criado no passo 6;
@@ -111,16 +111,24 @@
         const arrayNumbers = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
         for (let num in arrayNumbers) {;
             const numbersList = document.creatElement('li');
-            numbersList.innerHTML=arrayNumbers[num]
+            numbersList.innerHTML = arrayNumbers[num]
             elementoList.appendChild(numbersList)}*/
-    
+    // Exercise - 8
+      const elementoList = document.createElement('ul');
+      elementDivRC.appendChild(elementoList);
+      const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+    for (let num in arrayNumbers) {
+      const elementLi = document.createElement('li');
+      elementLi.innerHTML = arrayNumbers[num];
+      elementoList.appendChild(elementLi);
+    }
     
     //9 
         
         
       
      
-     // Exercise - 1
+     /*// Exercise - 1
       const elementH1 = document.createElement('h1');
       elementH1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
       document.body.appendChild(elementH1);
@@ -150,13 +158,13 @@
       elementDivRight.className = 'right-content';
       elementDivMain.appendChild(elementDivRight);
 
-      /*// Exercise - 7
+     /* // Exercise - 7
       const elementImg = document.createElement('img');
       elementImg.className = 'small-image';
       elementImg.src = 'https://picsum.photos/200';
-      elementDivLeft.appendChild(elementImg);
+      elementDivLeft.appendChild(elementImg);*/
 
-     // Exercise - 8
+     /*// Exercise - 8
       const elementUl = document.createElement('ul');
       elementDivRight.appendChild(elementUl);
       const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
