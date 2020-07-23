@@ -106,23 +106,23 @@
     //8 Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, 
     //ou seja, um, dois, três, ... como valores da lista. 
     //Essa lista deve ser filha do div criado no passo 6;
-        let elementoList = document.createElement('ul');
-        elementDivRC.appendChild(elementoList);
+     /*   let elementList = document.createElement('ul');
+        elementDivRC.appendChild(elementList);
         const arrayNumbers = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez']
         for (let num in arrayNumbers) {
             let numbersList = document.creatElement('li');
             numbersList.innerHTML = arrayNumbers[num];
-            elementoList.appendChild(numbersList)}
+            elementList.appendChild(numbersList)}*/
     // Exercise - 8
-     /* const elementoList = document.createElement('ul');
-      elementDivRC.appendChild(elementoList);
+      const elementList = document.createElement('ul');
+      elementDivRC.appendChild(elementList);
       const arrayNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
     for (let num in arrayNumbers) {
       const elementLi = document.createElement('li');
       elementLi.innerHTML = arrayNumbers[num];
-      elementoList.appendChild(elementLi);
+      elementList.appendChild(elementLi);
     }
-    */
+    
     //9 Adicione 3 tags h3, todas sendo filhas do div criado no passo 2.
     for (let i=0; i<3;i++){;
         let elementH3 = document.createElement('h3');
@@ -136,6 +136,12 @@
     const title = document.getElementsByTagName('h1')[0];
     title.class = 'title'
       
+    //2 Adicione a classe description nas 3 tags h3 criadas
+    const elementH3 = document.getElementsByTagName('h3')
+    for (let i=0;i<3;i++){
+        elementH3[i].class= 'description'
+    }
+    
      
      /*// Exercise - 1
       const elementH1 = document.createElement('h1');
