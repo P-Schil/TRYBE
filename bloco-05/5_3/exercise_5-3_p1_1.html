@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.3 parte 1 - ex1</title>
-    <style>
-      
-    </style>
-  </head>
-  <body>
-    
-    <script>
-      
+ <head>
+  <meta charset="utf-8" />
+  <title></title>
+ </head>
+ <body>
+ 
+ <h1>Mad Libs</h1>
+ 
+ <ul>
+  <li>Noun: <input type="text" id="noun">
+  <li>Adjective: <input type="text" id="adjective">
+  <li>Someone's Name: <input type="text" id="person">
+ </ul>
+ 
+ <button id="lib-button">Lib it!</button>
+  
+ <div id="story"></div>
+ <script>
+     const selectNoun = document.querySelector('#noun')
+     const selectAdjective = document.querySelector('#adjective')
+     const selectPerson = document.querySelector('#person')
+     const selectDivStory = document.querySelector('#story')
+     const selectLibButton = document.querySelector('#lib-button')
 
-    </script>
+     function concatWords (){
+         
+         selectDivStory.innerText = selectPerson.value+" realmente gosta de "+selectNoun.value+" "
+         +selectAdjective.value
+     }
+     selectLibButton.addEventListener("click",concatWords)
 
 
-  </body>
+    /*const inputTexto = document.querySelector("#input-texto");
+const divQuadrado = document.querySelector(".quadrado");
+
+function corQuadrado() {
+  divQuadrado.style.backgroundColor = inputTexto.value;
+}
+
+inputTexto.addEventListener("change", corQuadrado);*/
+
+ </script>
+  
+ </body>
 </html>
+/*Add a script tag to the bottom of the page for your code.
+Add an event listener to the button so that it calls a makeMadLib 
+function when clicked.
+In the makeMadLib function, retrieve the current values of the form 
+input elements, make a story from them, and output that in the story 
+div (like "Pamela really likes pink cucumbers.")
